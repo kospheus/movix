@@ -2,12 +2,13 @@
 import './homepage.scss';
 
 //Components
+import Header from '../components/header/header';
 import Hero from '../components/hero/hero';
 
 function Homepage() {
   return (
     <div className="homepage">
-      {/* <h1 className='homepage__title'>Movix</h1> */}
+      <Header />
       <Hero />
     </div>
   );
