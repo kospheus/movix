@@ -7,10 +7,17 @@
 @import '../pages/homepage.scss';
 
 //Components
-@import '../components/header/header.scss';
+@import '../components/headers/headerMobile.scss';
 @import '../components/hero/hero.scss';
 
+//Atoms
+@import '../components/atoms/searchbar/searchbar.scss';
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
   margin: 0;
