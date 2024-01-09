@@ -3,6 +3,13 @@
     display: flex;
     justify-content: center;
     &__img {
+        max-width: 100vw;
+        object-fit: cover;
+        justify-content: center;
         height: 84vh;
+        @include small {
+            height: auto;
+        }
     }
 }
+
