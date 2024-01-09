@@ -1,10 +1,13 @@
 //Settings
-@import './settings.scss';
+@import './settings/colors.scss';
+@import './settings/fonts.scss';
+@import './settings/mediaQueries.scss';
 
 //Pages
 @import '../pages/homepage.scss';
 
 //Components
+@import '../components/header/header.scss';
 @import '../components/hero/hero.scss';
 
 
