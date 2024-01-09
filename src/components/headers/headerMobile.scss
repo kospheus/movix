@@ -1,0 +1,72 @@
+.header {
+    width: 100vw;
+    padding: 24px 16px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include regular {
+        padding: 24px 48px;
+    }
+    &__logo {
+        z-index: 2;
+        height: 32px;
+    }
+    &__cta {
+        display: flex;
+        &__account {
+            background-color: transparent;
+            margin-left: 8px;
+            border: none;
+            height: 44px;
+            width: 44px;
+            border-radius: 4px;
+            &--icon {
+                color: $white;
+                height: 24px;
+            }
+        }
+        &__search {
+            z-index: 2;
+            background-color: transparent;
+            border: none;
+            height: 44px;
+            width: 44px;
+            border-radius: 4px;
+            &--icon {
+                color: $white;
+                height: 24px;
+            }
+        }
+        &__close {
+            z-index: 2;
+            background-color: $darkLight;
+            border: none;
+            height: 44px;
+            width: 44px;
+            &--icon {
+                color: $white;
+                height: 24px;
+            }
+        }
+    }
+    &__searchfield {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        padding: 100px 20px 32px 20px;
+        background-color: $darkLight;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__bar {
+            width: 100%;
+        }
+    }
+    &__searchfieldnull {
+        display: none;
+    }
+}
