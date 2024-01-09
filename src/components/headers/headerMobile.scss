@@ -13,6 +13,7 @@
         height: 32px;
     }
     &__cta {
+        z-index: 2;
         display: flex;
         &__account {
             background-color: transparent;
@@ -27,7 +28,6 @@
             }
         }
         &__search {
-            z-index: 2;
             background-color: transparent;
             border: none;
             height: 44px;
