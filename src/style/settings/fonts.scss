@@ -19,11 +19,13 @@ h1 {
     font-family: $manrope;
   }
   
-  body {
-    margin: 0;
-    font-size: 14px;
-    font-family: $manrope;
-    background-color: $dark;
-    font-weight: $light;
-  }
-  
+body {
+  margin: 0;
+  font-family: $manrope;
+  background-color: $dark;
+  font-weight: $light;
+}
+
+p {
+  font-size: 14px;
+}
