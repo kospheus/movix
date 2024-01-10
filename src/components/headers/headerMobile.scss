@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include regular {
+    @include Desktop {
         padding: 24px 48px;
     }
     &__logo {
