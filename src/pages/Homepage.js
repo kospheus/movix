@@ -17,8 +17,7 @@ function Homepage() {
 
   return (
     <div className="homepage">
-      {size.width < 900 && <HeaderMobile />}
-      {size.width > 900 && <HeaderDesktop />}
+      <HeaderMobile />
       <Hero />
     </div>
   );
