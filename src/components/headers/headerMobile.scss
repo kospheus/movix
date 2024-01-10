@@ -1,16 +1,18 @@
 .header {
+    z-index: 2;
     width: 100vw;
-    padding: 24px 16px;
+    padding: 8px 16px;
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $darkLight;
     @include Desktop {
-        padding: 24px 48px;
+        padding: 16px 48px;
     }
     &__logo {
         z-index: 2;
-        height: 32px;
+        height: 28px;
     }
     &__cta {
         z-index: 2;
@@ -56,8 +58,7 @@
         left: 0;
         z-index: 1;
         width: 100vw;
-        height: 100vh;
-        padding: 100px 20px 32px 20px;
+        padding: 62px 20px 24px 20px;
         background-color: $darkLight;
         display: flex;
         flex-direction: column;
