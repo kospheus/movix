@@ -11,14 +11,14 @@ const heroCarouselData = [
         img: "/moviesCovers/Gladiator.jpg",
         title :"Gladiator",
         alt: "Gladiator",
-        description: "Le général romain Maximus est le plus fidèle soutien de l'empereur Marc Aurèle, qu'il a conduit de victoire en victoire. Jaloux du prestige de Maximus, et plus encore de l'amour que lui voue l'empereur, le fils de Marc Aurèle, Commode, s'arroge brutalement le pouvoir, puis ordonne l'arrestation du général et son exécution. Maximus échappe à ses assassins, mais ne peut empêcher le massacre de sa famille. Capturé par un marchand d'esclaves, il devient gladiateur et prépare sa vengeance."
+        description: "Le fils de l'empereur romain Marc Aurèle s'arroge brutalement le pouvoir et ordonne l'exécution du général Maximus, le plus fidèle soutien de son père. Maximus échappe à ses assassins mais tombe aux mains d'un marchand d'esclaves. Ses dons et son courage en font bientôt l'idole des arènes..."
     },
     {
         id: "3",
         img: "/moviesCovers/justMercy.png",
         title :"Just Mercy",
         alt: "Just Mercy",
-        description: "Le combat historique du jeune avocat Bryan Stevenson. Après ses études à Harvard, il décide de se consacrer à la défense des droits civiques de ceux qui ont été condamnés à tort. Il se rend donc en Alabama et, avec le soutien d'une militante locale, Eva Ansley, il va s'intéresser au cas de Walter McMillian, dans le couloir de la mort pour le meurtre d'une jeune fille, malgré les nombreuses preuves de son innocence, tout en luttant contre un racisme prévalant et intransigeant."
+        description: "Inspiré d'une histoire vraie, le parcours du jeune avocat Bryan Stevenson et son combat pour défendre des hommes jugés coupables à tort ou d'autres qui n'ont pas les moyens d'être défendus, avec le soutien de la jeune avocate Eva Ansley."
     }
 ];
 

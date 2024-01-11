@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 //Data
 import heroCarouselData from '../../../data/heroCarouselItems';
@@ -12,6 +13,7 @@ import {ArrowRightIcon} from '@heroicons/react/24/outline';
 export const HeroCarousel = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
+    const [paused, setPaused] = useState(false);
 
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
@@ -23,13 +25,36 @@ export const HeroCarousel = () => {
         setActiveIndex(newIndex);
     }
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (!paused) {
+                updateIndex(activeIndex + 1);
+            }
+        }, 8000);
+
+        return () => {
+            if (interval) {
+                clearInterval(interval);
+            }
+        }
+    });
+
+    const handlers = useSwipeable({
+        onSwipedLeft: () => updateIndex(activeIndex + 1),
+        onSwipedRight: () => updateIndex(activeIndex - 1)
+    })
+     
+
     return (
-        <div className='heroCarousel'>
+        <div {...handlers}
+        className='heroCarousel'
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}>
             <div className='heroCarousel__inner'
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
 
                 {heroCarouselData.map((item) => (
-                    <div key={item.id} className='heroCarousel__item'>
+                    <div key={item.id} className='heroCarousel__item' >
                         <img src={item.img} className='heroCarousel__item__img' alt={item.alt}/>
                         <div className='heroCarousel__item__img--overlay'></div>
                         <div className='heroCarousel__item__content'>
