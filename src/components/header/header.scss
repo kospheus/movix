@@ -1,13 +1,13 @@
 .header {
     z-index: 2;
     width: 100vw;
-    padding: 8px 16px;
+    padding: 8px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $dark;
     @include tabletLandscape {
-        padding: 16px 48px;
+        padding: 16px 24px;
     }
     &__logo {
         z-index: 2;
@@ -52,7 +52,7 @@
         }
         &__close {
             z-index: 2;
-            background-color: $darkLight;
+            background-color: $dark;
             border: none;
             height: 44px;
             width: 44px;
@@ -70,7 +70,7 @@
         width: 100vw;
         margin-top: 40px;
         padding: 24px 20px;
-        background-color: $darkLight;
+        background-color: $dark;
         display: flex;
         flex-direction: column;
         align-items: center;
