@@ -5,13 +5,13 @@ import './homepage.scss';
 
 //Components
 import Hero from '../components/hero/hero';
-import HeaderMobile from '../components/headers/headerMobile';
+import Header from '../components/header/header';
 
 function Homepage() {
 
   return (
     <div className="homepage">
-      <HeaderMobile />
+      <Header />
       <Hero />
     </div>
   );

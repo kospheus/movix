@@ -9,7 +9,7 @@ import {MagnifyingGlassIcon} from '@heroicons/react/24/outline';
 import {XMarkIcon} from '@heroicons/react/24/outline';
 import {UserIcon} from '@heroicons/react/24/outline';
 
-function HeaderMobile() {
+function Header() {
 
     const [showSearchbar, setSearchbar] = useState();
 
@@ -48,4 +48,4 @@ function HeaderMobile() {
     )
 }
 
-export default HeaderMobile;
+export default Header;
