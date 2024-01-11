@@ -1,5 +1,5 @@
 .inputSearch {
-    background-color: $white;
+    background-color: $darkLight;
     width: 100%;
     padding: 4px;
     border-radius: 4px;
@@ -11,6 +11,16 @@
         border: none;
         width: 80%;
         margin: 0 8px;
+        background-color: $darkLight;
+        color: $white;
+        font-size: 16px;
+        font-family: $manrope;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: $grey;
+        }
     }
     &__button {
         background-color: $red;

@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $darkLight;
-    @include Desktop {
+    background-color: $dark;
+    @include tabletLandscape {
         padding: 16px 48px;
     }
     &__logo {
@@ -16,6 +16,7 @@
     &__cta {
         z-index: 2;
         display: flex;
+        align-items: center;
         &__account {
             background-color: transparent;
             margin-left: 8px;
@@ -28,12 +29,22 @@
                 height: 24px;
             }
         }
+        &__searchbar {
+            display: none;
+            @include tabletLandscape {
+                display: block;
+                width: 500px;
+            }
+        }
         &__search {
             background-color: transparent;
             border: none;
             height: 44px;
             width: 44px;
             border-radius: 4px;
+            @include tabletLandscape {
+                display: none;
+            }
             &--icon {
                 color: $white;
                 height: 24px;
@@ -57,7 +68,8 @@
         left: 0;
         z-index: 1;
         width: 100vw;
-        padding: 62px 20px 24px 20px;
+        margin-top: 40px;
+        padding: 24px 20px;
         background-color: $darkLight;
         display: flex;
         flex-direction: column;

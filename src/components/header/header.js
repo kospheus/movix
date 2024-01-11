@@ -30,6 +30,9 @@ function Header() {
                         <button className='header__cta__search' onClick={display}>
                             <MagnifyingGlassIcon className='header__cta__search--icon' alt='Search' />
                         </button>
+                        <div className='header__cta__searchbar'>
+                            <Searchbar placeholder='Film, genre, acteur...'/>
+                        </div>
                         <button className='header__cta__account'>
                             <UserIcon className='header__cta__account--icon' alt='Mon compte' />
                         </button>
