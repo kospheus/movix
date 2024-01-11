@@ -15,10 +15,10 @@ const heroCarouselData = [
     },
     {
         id: "3",
-        img: "/moviesCovers/justMercy.png",
+        img: "/moviesCovers/justMercy.jpg",
         title :"Just Mercy",
         alt: "Just Mercy",
-        description: "Inspiré d'une histoire vraie, le parcours du jeune avocat Bryan Stevenson et son combat pour défendre des hommes jugés coupables à tort ou d'autres qui n'ont pas les moyens d'être défendus, avec le soutien de la jeune avocate Eva Ansley."
+        description: "Inspiré d'une histoire vraie, le parcours du jeune avocat Bryan Stevenson et son combat pour défendre des hommes jugés coupables à tort ou d'autres qui n'ont pas les moyens d'être défendus, avec le soutien de la jeune avocate Eva Ansley. Inspiré d'une histoire vraie dans les couloirs de la mort d'Alabama."
     }
 ];
 
