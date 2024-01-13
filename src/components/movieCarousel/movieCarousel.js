@@ -1,4 +1,7 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import movieImg from "../../assets/endgame.jpg";
 import netflix from "../../assets/icons/netflix.png";
@@ -8,6 +11,67 @@ import {ArrowLeftIcon} from '@heroicons/react/24/outline';
 import {ArrowRightIcon} from '@heroicons/react/24/outline';
 
 function MovieCarousel() {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+                  slidesToShow: 7,
+                  slidesToScroll: 4,
+                  infinite: true,
+                  dots: true
+                }
+            },
+            {
+                breakpoint: 1460,
+                settings: {
+                  slidesToShow: 6,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+            },
+            {
+                breakpoint: 1240,
+                settings: {
+                  slidesToShow: 5,
+                  slidesToScroll: 2,
+                  infinite: true,
+                  dots: true
+                }
+            },
+            {
+              breakpoint: 1020,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 840,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 620,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+          ]
+      };
 
     return (
         <div className="movieCarousel">
@@ -34,8 +98,9 @@ function MovieCarousel() {
                 </div>
             </div>
 
-            <div className="movieCarousel__inner">
+            <Slider className="movieCarousel__inner" {...settings}>
 
+                
                 <div className="movieCarousel__item">
                     <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
                     <div className="movieCarousel__item__infos">
@@ -184,9 +249,9 @@ function MovieCarousel() {
                             <p className="movieCarousel__item__text">1.5k</p>
                         </div>
                     </div>
-                </div>ù
+                </div>
 
-            </div>
+            </Slider>
         </div>
     )
 }
