@@ -7,7 +7,7 @@
     align-items: center;
     background-color: $dark;
     @include tabletLandscape {
-        padding: 16px 24px;
+        padding: 16px 32px 16px 24px;
     }
     &__logo {
         z-index: 2;
