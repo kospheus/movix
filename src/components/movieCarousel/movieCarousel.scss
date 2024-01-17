@@ -67,8 +67,20 @@
         flex-direction: column;
         padding: 12px;
         &__img {
+            height: 75%;
             width: 100%;
             border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        &__title {
+            text-align: center;
+            color: $white;
+            font-family: $manrope;
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
             margin-bottom: 12px;
         }
         &__infos {

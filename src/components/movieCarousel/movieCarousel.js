@@ -3,6 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+//Data
+import topMovieCarouselData from '../../data/movieCarouselItems.js';
+
+//Assets
 import movieImg from "../../assets/endgame.jpg";
 import netflix from "../../assets/icons/netflix.png";
 import { ClockIcon } from '@heroicons/react/24/solid';
@@ -12,8 +16,9 @@ import {ArrowRightIcon} from '@heroicons/react/24/outline';
 
 function MovieCarousel() {
 
+    console.log(topMovieCarouselData);
+
         const sliderRef = useRef(null);
-        console.log(sliderRef.current);
 
         const settings = {
             dots: false,
@@ -102,8 +107,28 @@ function MovieCarousel() {
 
                 <Slider ref={sliderRef} className="movieCarousel__inner" {...settings}>
 
-                    <div className="movieCarousel__item">
+                    {topMovieCarouselData.map((item) => (
+                        <div key={item.id} className="movieCarousel__item">
+                            <img src={item.img} className="movieCarousel__item__img" alt={item.title}/>
+                            <p className="movieCarousel__item__title">{item.title}</p>
+                            <div className="movieCarousel__item__infos">
+                                <div className="movieCarousel__item__infos__info">
+                                    <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
+                                    <p className="movieCarousel__item__text">{item.duration}</p>
+                                </div>
+                                <div className="movieCarousel__item__infos__info">
+                                    <img src={item.plateform} className="movieCarousel__item__streaming" alt="Likes"/>
+                                    <HandThumbUpIcon className="movieCarousel__item__icon" alt="Likes"/>
+                                    <p className="movieCarousel__item__text">{item.likes}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                    
+
+                    {/* <div className="movieCarousel__item">
                         <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
+                        <p className="movieCarousel__item__title">Avengers : endgame</p>
                         <div className="movieCarousel__item__infos">
                             <div className="movieCarousel__item__infos__info">
                                 <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
@@ -119,6 +144,7 @@ function MovieCarousel() {
 
                     <div className="movieCarousel__item">
                         <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
+                        <p className="movieCarousel__item__title">Avengers : endgame</p>
                         <div className="movieCarousel__item__infos">
                             <div className="movieCarousel__item__infos__info">
                                 <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
@@ -134,6 +160,7 @@ function MovieCarousel() {
 
                     <div className="movieCarousel__item">
                         <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
+                        <p className="movieCarousel__item__title">Avengers : endgame</p>
                         <div className="movieCarousel__item__infos">
                             <div className="movieCarousel__item__infos__info">
                                 <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
@@ -149,6 +176,7 @@ function MovieCarousel() {
 
                     <div className="movieCarousel__item">
                         <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
+                        <p className="movieCarousel__item__title">Avengers : endgame</p>
                         <div className="movieCarousel__item__infos">
                             <div className="movieCarousel__item__infos__info">
                                 <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
@@ -164,6 +192,7 @@ function MovieCarousel() {
 
                     <div className="movieCarousel__item">
                         <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
+                        <p className="movieCarousel__item__title">Avengers : endgame</p>
                         <div className="movieCarousel__item__infos">
                             <div className="movieCarousel__item__infos__info">
                                 <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
@@ -179,6 +208,7 @@ function MovieCarousel() {
 
                     <div className="movieCarousel__item">
                         <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
+                        <p className="movieCarousel__item__title">Avengers : endgame</p>
                         <div className="movieCarousel__item__infos">
                             <div className="movieCarousel__item__infos__info">
                                 <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
@@ -194,6 +224,7 @@ function MovieCarousel() {
 
                     <div className="movieCarousel__item">
                         <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
+                        <p className="movieCarousel__item__title">Avengers : endgame</p>
                         <div className="movieCarousel__item__infos">
                             <div className="movieCarousel__item__infos__info">
                                 <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
@@ -209,6 +240,7 @@ function MovieCarousel() {
 
                     <div className="movieCarousel__item">
                         <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
+                        <p className="movieCarousel__item__title">Avengers : endgame</p>
                         <div className="movieCarousel__item__infos">
                             <div className="movieCarousel__item__infos__info">
                                 <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
@@ -220,37 +252,7 @@ function MovieCarousel() {
                                 <p className="movieCarousel__item__text">1.5k</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="movieCarousel__item">
-                        <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
-                        <div className="movieCarousel__item__infos">
-                            <div className="movieCarousel__item__infos__info">
-                                <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
-                                <p className="movieCarousel__item__text">1h30</p>
-                            </div>
-                            <div className="movieCarousel__item__infos__info">
-                                <img src={netflix} className="movieCarousel__item__streaming" alt="Likes"/>
-                                <HandThumbUpIcon className="movieCarousel__item__icon" alt="Likes"/>
-                                <p className="movieCarousel__item__text">1.5k</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="movieCarousel__item">
-                        <img src={movieImg} className="movieCarousel__item__img" alt="Movie Img"/>
-                        <div className="movieCarousel__item__infos">
-                            <div className="movieCarousel__item__infos__info">
-                                <ClockIcon className="movieCarousel__item__icon" alt="Durée"/>
-                                <p className="movieCarousel__item__text">1h30</p>
-                            </div>
-                            <div className="movieCarousel__item__infos__info">
-                                <img src={netflix} className="movieCarousel__item__streaming" alt="Likes"/>
-                                <HandThumbUpIcon className="movieCarousel__item__icon" alt="Likes"/>
-                                <p className="movieCarousel__item__text">1.5k</p>
-                            </div>
-                        </div>
-                    </div>
+                    </div> */}
 
                 </Slider>
             </div>
