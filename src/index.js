@@ -5,12 +5,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './style/style.scss';
+
+//Pages
 import Homepage from './pages/Homepage';
+import MoviePage from './pages/moviePage/moviePage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
+  },
+  {
+    path: "/movie",
+    element: <MoviePage />,
   },
 ]);
 
