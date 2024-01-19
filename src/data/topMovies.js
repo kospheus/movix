@@ -1,4 +1,4 @@
-const topMovieCarouselData = [
+const topMoviesData = [
     {
         id: "1",
         title: "Tár",
@@ -81,4 +81,4 @@ const topMovieCarouselData = [
     }
 ];
 
-export default topMovieCarouselData;
+export default topMoviesData;
