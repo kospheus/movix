@@ -1,6 +1,9 @@
+import Header from "../../components/header/header";
+
+
 function MoviePage() {
     return (
-        <h1>Gladiator</h1>
+        <Header />
     )
 }
 
