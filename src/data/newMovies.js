@@ -1,84 +1,100 @@
 const newMoviesData = [
     {
         id: "1",
-        title: "Tár",
-        img: "/assets/moviesCovers/tar.jpg",
-        duration: "2h38",
+        title: "The Kitchen",
+        img: "/assets/moviesCovers/theKitchen.jpg",
+        duration: "1h47",
         likes: "3k8",
-        plateform: "/assets/streamingIcon/canal.png"
+        plateform: "/assets/streamingIcon/netflix.png"
     },
     {
         id: "2",
-        title: "Spider-man: Across the spider-verse",
-        img: "/assets/moviesCovers/smSpiderverse.jpeg",
-        duration: "2h21",
+        title: "Mystère à Venise",
+        img: "/assets/moviesCovers/mystèreAVenise.jpg",
+        duration: "1h43",
         likes: "3k4",
-        plateform: "/assets/streamingIcon/canal.png"
+        plateform: "/assets/streamingIcon/prime.png"
     },
     {
         id: "3",
-        title: "Oppenheimer",
-        img: "/assets/moviesCovers/oppenheimer.png",
-        duration: "3h01",
+        title: "Equalizer 3",
+        img: "/assets/moviesCovers/equalizer3.png",
+        duration: "1h49",
         likes: "3k3",
-        plateform: "/assets/streamingIcon/netflix.png"
+        plateform: "/assets/streamingIcon/canal.png"
     },
     {
         id: "4",
-        title: "Tár",
-        img: "/assets/moviesCovers/tar.jpg",
-        duration: "2h38",
+        title: "The Kitchen",
+        img: "/assets/moviesCovers/theKitchen.jpg",
+        duration: "1h47",
         likes: "3k8",
-        plateform: "/assets/streamingIcon/canal.png"
+        plateform: "/assets/streamingIcon/netflix.png"
     },
     {
         id: "5",
-        title: "Spider-man: Across the spider-verse",
-        img: "/assets/moviesCovers/smSpiderverse.jpeg",
-        duration: "2h21",
+        title: "Mystère à Venise",
+        img: "/assets/moviesCovers/mystèreAVenise.jpg",
+        duration: "1h43",
         likes: "3k4",
-        plateform: "/assets/streamingIcon/canal.png"
+        plateform: "/assets/streamingIcon/prime.png"
     },
     {
         id: "6",
-        title: "Oppenheimer",
-        img: "/assets/moviesCovers/oppenheimer.png",
-        duration: "3h01",
+        title: "Equalizer 3",
+        img: "/assets/moviesCovers/equalizer3.png",
+        duration: "1h49",
         likes: "3k3",
-        plateform: "/assets/streamingIcon/netflix.png"
-    },
-    {
-        id: "7",
-        title: "Tár",
-        img: "/assets/moviesCovers/tar.jpg",
-        duration: "2h38",
-        likes: "3k8",
-        plateform: "/assets/streamingIcon/prime.png"
-    },
-    {
-        id: "8",
-        title: "Spider-man: Across the spider-verse",
-        img: "/assets/moviesCovers/smSpiderverse.jpeg",
-        duration: "2h21",
-        likes: "3k4",
         plateform: "/assets/streamingIcon/canal.png"
     },
     {
-        id: "9",
-        title: "Oppenheimer",
-        img: "/assets/moviesCovers/oppenheimer.png",
-        duration: "3h01",
-        likes: "3k3",
+        id: "7",
+        title: "The Kitchen",
+        img: "/assets/moviesCovers/theKitchen.jpg",
+        duration: "1h47",
+        likes: "3k8",
         plateform: "/assets/streamingIcon/netflix.png"
     },
     {
-        id: "10",
-        title: "Past Lives",
-        img: "/assets/moviesCovers/pastLives.jpeg",
-        duration: "1h46",
-        likes: "2k3",
+        id: "8",
+        title: "Mystère à Venise",
+        img: "/assets/moviesCovers/mystèreAVenise.jpg",
+        duration: "1h43",
+        likes: "3k4",
         plateform: "/assets/streamingIcon/prime.png"
-    }
+    },
+    {
+        id: "9",
+        title: "Equalizer 3",
+        img: "/assets/moviesCovers/equalizer3.png",
+        duration: "1h49",
+        likes: "3k3",
+        plateform: "/assets/streamingIcon/canal.png"
+    },
+    {
+        id: "10",
+        title: "The Kitchen",
+        img: "/assets/moviesCovers/theKitchen.jpg",
+        duration: "1h47",
+        likes: "3k8",
+        plateform: "/assets/streamingIcon/netflix.png"
+    },
+    {
+        id: "11",
+        title: "Mystère à Venise",
+        img: "/assets/moviesCovers/mystèreAVenise.jpg",
+        duration: "1h43",
+        likes: "3k4",
+        plateform: "/assets/streamingIcon/prime.png"
+    },
+    {
+        id: "12",
+        title: "Equalizer 3",
+        img: "/assets/moviesCovers/equalizer3.png",
+        duration: "1h49",
+        likes: "3k3",
+        plateform: "/assets/streamingIcon/canal.png"
+    },
 ];
 
 export default newMoviesData;
